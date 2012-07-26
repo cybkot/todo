@@ -4,5 +4,5 @@ development:
   database: blog_development
   pool: 5
   username: root
-  password:3101918252
-  host: localhost
+  password: "3101918252"
+  host: "127.0.0.1"
