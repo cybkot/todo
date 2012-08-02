@@ -10,9 +10,9 @@ class SummController < ApplicationController
 		  			@calc = params['ras'].to_f / params['dva'].to_f
 		  			
 
-		  		end
+		  			end
 
-end
+						end
 	def summ
 end
 

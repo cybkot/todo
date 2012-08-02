@@ -1,8 +1,6 @@
 class TodoController < ApplicationController
-	def show
-		@todo = Todo.find(params[:id])
+	def todo
+		@todo = Todo.all
 		end
-		def new 
-			@title = "todo"
-		end
+		
 end
