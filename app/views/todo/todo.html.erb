@@ -1,3 +1,23 @@
+<html>
+<head>
+	<h1>My todo list </h1>
+</head>
+<body>
 <% @todo.each do |todo| %>
-<% todo.name %>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+	<tr>
+		task:<%=todo.name %>
+	</tr> 
+
+  		<tr>
+  			|status:<%=todo.status%>
+  		</tr>
+  		<br> 
+  	</table>
 <% end %>
+</body>
+</html>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+1 - не сделанно, 2 - сделанно, 3 - отложенно

@@ -6,7 +6,7 @@ resources :todos
 
 	 get "summ/summ" => "summ#summ"
 	 
-	 get "todo/" => "todo#todo"
-				
+	 get "todo/todo" => "todo#todo"
+		get "todo/new" => "todo#todo"	
 	end		
 
