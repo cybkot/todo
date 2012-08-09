@@ -1,0 +1,39 @@
+<p>
+  <strong>Title:</strong>
+  <%= @todo.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @todo.text %>
+</p>
+ 
+<h2>Comments</h2>
+<% @todo.comments.each do |comment| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+<% end %>
+ 
+<h2>Add a comment:</h2>
+<%= form_for([@todo, @todo.comments.build]) do |f| %>
+  <p>
+    <%= f.label :commenter %><br />
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+ 
+<%= link_to 'Edit Comment', edit_todo_path(@todo) %>
