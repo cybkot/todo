@@ -1,7 +1,5 @@
 Blog::Application.routes.draw do
-resources :todos do
-  resources :comments
-end
+
 
 		 	get "/tododb/" => "todo#todo"
 

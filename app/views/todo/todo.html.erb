@@ -1,6 +1,13 @@
 <html>
 <head>
 	<center><h3>My todo list </h3></center>
+  <p><% if flash[:notice] %>
+      <p class="notice"><%= flash[:notice] %></p>
+    <% end %>
+     <% if flash[:error] %>
+      <p class="error"><%= flash[:error] %></p>
+    <% end %>
+  </p>
 </head>
 <body>
 <% @todo.each do |todo| %>
